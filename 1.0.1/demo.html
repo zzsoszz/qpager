@@ -1,23 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
 
-<link rel="stylesheet" href="jquery.qpager.css"   media="all"    type="text/css" />
+<link rel="stylesheet" href="plugin.css"   media="all"    type="text/css" />
 <script type="text/javascript"  src="jquery-1.10.2.js" ></script>
-<script type="text/javascript"  src="qpager.js" ></script>
-<script type="text/javascript"  src="jquery.qpager.js" ></script>
+<script type="text/javascript"  src="plugin.js" ></script>
 
 
 <script>
 	$(document).ready(
 		function()
 		{
-			
 			$(".qpager").qpager(
 				{
-					totalpage:57,initpage:1,
+					totalpage:57,currentpage:1,
 					pagechange:function(page)
 					{
 						console.log(page);
@@ -27,7 +24,7 @@
 			
 			$(".qpager").qpager(
 				{
-					totalpage:25,initpage:2,
+					totalpage:25,currentpage:2,
 					pagechange:function(page)
 					{
 						console.log(page);
@@ -35,7 +32,6 @@
 				}
 			);
 			
-
 		}
 	);
 </script>
@@ -45,7 +41,7 @@
 
 
 <body>
-	
+
 	<div class="qpager">
 		<div>
 			<button class="prev">&lt;&lt;</button>
@@ -58,7 +54,6 @@
 			<button class="turn">跳转</button>
 		</div>
 	</div>
-
+	
 </body>
-
 </html>
